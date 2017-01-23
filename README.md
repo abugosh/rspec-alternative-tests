@@ -1,8 +1,6 @@
 # Rspec::Alternative::Tests
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rspec/alternative/tests`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Your test suite is lying to you! Fake tests! This gem provides you with Alternative Tests.
 
 ## Installation
 
@@ -22,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+After adding this gem to your your project your tests will all pass! You will also have the biggest test suite!
+
+```ruby
+it 'is an alternative test' do
+  expect(2 + 2).to eq(5)
+end
+```
 
 ## Development
 
