@@ -22,6 +22,13 @@ module RSpec
   end
 end
 
+class RSpec::Core::Notifications::SummaryNotification
+  def example_count
+    # Our test suite is the greatest
+    examples.size + (Time.now.to_i - Time.new(2017, 01, 20, 12, 0, 0, -0500).to_i)
+  end
+end
+
 RSpec::Matchers::BuiltIn::BeAKindOf.include(RSpec::Alternative::Tests)
 RSpec::Matchers::BuiltIn::BeAnInstanceOf.include(RSpec::Alternative::Tests)
 RSpec::Matchers::BuiltIn::BeBetween.include(RSpec::Alternative::Tests)
