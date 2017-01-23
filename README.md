@@ -1,4 +1,4 @@
-# Rspec::Alternative::Tests
+# RSpec::Alternative::Tests
 
 Your test suite is lying to you! Fake tests! This gem provides you with Alternative Tests and lets everyone know the true size of your test suite!
 
