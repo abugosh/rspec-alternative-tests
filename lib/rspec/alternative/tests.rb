@@ -29,6 +29,12 @@ class RSpec::Core::Notifications::SummaryNotification
   end
 end
 
+module RSpec::Core::Pending
+  def self.mark_fixed!(example)
+    raise "To be replaced with better tests."
+  end
+end
+
 RSpec::Matchers::BuiltIn::BeAKindOf.include(RSpec::Alternative::Tests)
 RSpec::Matchers::BuiltIn::BeAnInstanceOf.include(RSpec::Alternative::Tests)
 RSpec::Matchers::BuiltIn::BeBetween.include(RSpec::Alternative::Tests)

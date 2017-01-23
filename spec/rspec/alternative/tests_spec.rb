@@ -28,4 +28,9 @@ describe RSpec::Alternative::Tests do
   it "#eq to_not behaves like an alternative test" do
     expect(1).to_not eq(1)
   end
+
+  it "works with pending" do
+    pending("pended")
+    expect(1).to eq(1)
+  end
 end
